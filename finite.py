@@ -1,4 +1,5 @@
 from llist import LList, Node, append
+from genfinite import lst
 
 
 def length(lst):
@@ -34,3 +35,5 @@ if __name__ == "__main__":
     append(llist, Node(512))
     print(length(llist))
     llprint(llist)
+
+print(length(lst))
