@@ -14,6 +14,8 @@ def length(lst):
 def llprint(lst):
     """print a finite linked list"""
     current = lst.head
+    if current is None:
+        print("List is empty")
     while current:
         print(current.val, end=" ")
         current = current.next
@@ -23,16 +25,17 @@ def llprint(lst):
 
 if __name__ == "__main__":
     llist = LList()
-    append(llist, Node(1))
-    append(llist, Node(2))
-    append(llist, Node(3))
-    append(llist, Node(8))
-    append(llist, Node(16))
-    append(llist, Node(32))
-    append(llist, Node(64))
-    append(llist, Node(128))
-    append(llist, Node(256))
-    append(llist, Node(512))
+    # append(llist, Node(1))
+    # append(llist, Node(2))
+    # append(llist, Node(3))
+    # append(llist, Node(8))
+    # append(llist, Node(16))
+    # append(llist, Node(32))
+    # append(llist, Node(64))
+    # append(llist, Node(128))
+    # append(llist, Node(256))
+    # append(llist, Node(512))
+
     print(length(llist))
     llprint(llist)
 
